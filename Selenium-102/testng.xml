@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <parameter name="email" value="asd@asd.com"></parameter>
+    <parameter name="password" value="asdasd"></parameter>
+    <listeners>
+        <listener class-name="MyListener"></listener>
+    </listeners>
+
+    <test name="test.ng" >
+        <classes>
+            <class name="uk.co.automationtesting.LoginTest"></class>
+        </classes>
+    </test>
+</suite>
